@@ -1,16 +1,19 @@
 import { Route, BrowserRouter, Routes } from 'react-router-dom';
-import { Canvas } from '@react-three/fiber';
-import './App_init.css';
+import Menu from './component/menu'
+import Home from './component/home'
+import './App.css';
+
+
 
 export default function App(){
     return(
-        <div className='App'>
-            <Canvas camera={{ position: [0, 0, 2] }}>
-                <mesh>
-                    <boxGeometry />
-                    <meshBasicMaterial color={0x00ff00} wireframe />
-                </mesh>
-            </Canvas>
-        </div>
+        <BrowserRouter>
+            <div className='App'>
+                <Menu/>
+                <Routes>
+                    <Route path='/' element={<Home/>}/>
+                </Routes>
+            </div>
+        </BrowserRouter>
     )
 }

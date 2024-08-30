@@ -1,3 +1,7 @@
+a{
+  text-decoration-line: none;
+  color: #212125;
+}
 .menu{
     width: 15%;
     height: 100vh;
@@ -63,25 +67,37 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 .menuBox > h1{
     height: 60px;
     display: flex;
     align-items: center;
 }
-.menuBox span{
+.subTitle1{
     width: 100%;
     height: 30px;
-    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 20px;
+    padding-left: 20px;
+    box-sizing: border-box;
     display: flex;
     align-items: center;
-    justify-content: center;
+    cursor: pointer;
 }
-.menuBox ul{
+.listBtn1{
+    width: 100%;
+    overflow: hidden;
+}
+.menuList1{
     width: 100%;
     display: none;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
+}
+.menuList1 a{
+    width: 100%;
+}
+.menuList1 li{
+    position: relative;
+    left: -15%;
 }

@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import styles from '../css/menu.module.css'
+import { Link } from 'react-router-dom';
 
 export default function Menu(){
     const [menu_s, setMenu_s] = useState(false);
@@ -38,8 +39,10 @@ export default function Menu(){
         const menu = document.getElementById('menu_1');
         if(window.getComputedStyle(menu).display === "none"){
             menu.setAttribute("style", "display:flex");
+            menu.animate([{transform:'translateY(-100%)'}, {transform:'translateY(0%)'}], {fill:'forwards', duration:100});
         }else{
             menu.setAttribute("style", "display:none");
+            menu.animate([{transform:'translateY(0%)'}, {transform:'translateY(-100%)'}], {fill:'forwards', duration:100});
         }
     }
 
@@ -51,11 +54,13 @@ export default function Menu(){
                 <span className={styles.btnDising} id={styles.btnDising3}></span>
             </div>
             <div className={styles.menuBox}>
-                <h1>Example</h1>
-                <span className={styles.listBtn1} onClick={MenuClick2}>시작 예제</span>
-                <ul className={styles.menuList1} id='menu_1'>
-                    <li>기본 큐브</li>
-                </ul>
+                <Link to={'/'}><h1>Example</h1></Link>
+                <span className={styles.subTitle1} onClick={MenuClick2}>시작 예제</span>
+                <div className={styles.listBtn1}>
+                    <ul className={styles.menuList1} id='menu_1'>
+                        <Link to={'/Cube'}><li>기본 큐브</li></Link>
+                    </ul>
+                </div>
             </div>
         </div>
     )

@@ -41,7 +41,9 @@
         }
     },
     "dependencies": {
-        "@react-three/drei": "^9.111.4",
-        "react-router-dom": "^6.26.1"
+        "@react-three/drei": "^9.111.5",
+        "leva": "^0.9.35",
+        "react-router-dom": "^6.26.1",
+        "tunnel-rat": "^0.1.2"
     }
 }

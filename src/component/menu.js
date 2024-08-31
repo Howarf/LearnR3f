@@ -59,6 +59,7 @@ export default function Menu(){
                 <div className={styles.listBtn1}>
                     <ul className={styles.menuList1} id='menu_1'>
                         <Link to={'/Cube'}><li>기본 큐브</li></Link>
+                        <Link to={'/UiPairing'}><li>Ui 연동하기</li></Link>
                     </ul>
                 </div>
             </div>

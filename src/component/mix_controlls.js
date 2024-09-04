@@ -27,10 +27,11 @@ export default function Mix_Controlls(){
     const [z, setZ] = useState(0);
 
     useEffect(()=>{
+        target === null ? (console.log(target)):(console.log(target.position.x));
         setX(position_x);   //controls에는 변수들 선언한후 그 변수에 value들과
         setY(position_y);   //컨트롤하는 방식(옵션,드래그바,수치)을 고르는 객체를 만드는 느낌
         setZ(position_z);
-    },[position_x, position_y, position_z])
+    },[position_x, position_y, position_z,target])
 
     return(
         <Canvas dpr={[1, 2]} onPointerMissed={()=>setTarget(null)}>

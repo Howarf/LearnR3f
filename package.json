@@ -42,7 +42,9 @@
     },
     "dependencies": {
         "@react-three/drei": "^9.111.5",
+        "@react-three/postprocessing": "^2.16.2",
         "@studio-freight/lenis": "^1.0.42",
+        "antd": "^5.20.5",
         "leva": "^0.9.35",
         "react-router-dom": "^6.26.1",
         "tunnel-rat": "^0.1.2",

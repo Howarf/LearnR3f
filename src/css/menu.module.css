@@ -99,5 +99,6 @@ a{
 }
 .menuList1 li{
     position: relative;
-    left: -15%;
+    display: flex;
+    left: 20%;
 }

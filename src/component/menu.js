@@ -61,6 +61,7 @@ export default function Menu(){
                         <Link to={'/Cube'}><li>기본 큐브</li></Link>
                         <Link to={'/UiPairing'}><li>Ui 연동하기</li></Link>
                         <Link to={'/Mix_Controlls'}><li>여러가지 컨트롤러</li></Link>
+                        <Link to={'/Mix_HTML'}><li>HTML로 제어하기</li></Link>
                     </ul>
                 </div>
             </div>

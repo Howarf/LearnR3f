@@ -62,6 +62,7 @@ export default function Menu(){
                         <Link to={'/UiPairing'}><li>Ui 연동하기</li></Link>
                         <Link to={'/Mix_Controlls'}><li>여러가지 컨트롤러</li></Link>
                         <Link to={'/Mix_HTML'}><li>HTML로 제어하기</li></Link>
+                        <Link to={'/CanvasWithText'}><li>캔버스에글자넣기</li></Link>
                     </ul>
                 </div>
             </div>

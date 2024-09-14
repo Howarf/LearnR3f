@@ -63,6 +63,7 @@ export default function Menu(){
                         <Link to={'/Mix_Controlls'}><li>여러가지 컨트롤러</li></Link>
                         <Link to={'/Mix_HTML'}><li>HTML로 제어하기</li></Link>
                         <Link to={'/CanvasWithText'}><li>캔버스에글자넣기</li></Link>
+                        <Link to={'/ScrollCanvas'}><li>캔버스에 스크롤적용</li></Link>
                     </ul>
                 </div>
             </div>
